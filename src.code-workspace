@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "src",
+			"path": "../Downloads/customer-portal/customer-portal/src"
+		},
+		{
+			"name": "customer_portal_demo",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

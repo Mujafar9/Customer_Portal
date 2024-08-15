@@ -1,0 +1,80 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.customer-list {
+    display: flex;
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+.customer-list-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+    margin-right: 20px;
+    padding-top: 20px;
+    overflow-y: auto;
+    max-height: 600px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.customer-list-box::-webkit-scrollbar {
+    width: 12px;
+}
+
+.customer-list-box::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+.customer-list-box::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.customer-list-box::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 6px;
+}
+
+.customer-list-person-detail {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.customer-list-person-detail:hover {
+    background-color: #e0e0e0;
+}
+
+.customer-list-person-detail.selected {
+    background-color: #d0d0d0;
+    border: 0.3px solid #9f9797;
+    /* transform: scale(1.03); Enlarge the selected item */
+    z-index: 1;
+    border-left: 5px solid red;
+    font-size: x-large;
+}
+
+.customer-list-box2,
+.customer-list-box3 {
+    display: flex;
+    align-items: flex-start;
+}
